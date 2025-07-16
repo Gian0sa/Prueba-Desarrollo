@@ -1,0 +1,283 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Descargas\\Solucion\\SlnTrabjador\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\trabajador\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\trabajador\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\trabajador\\_editarmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\trabajador\\_editarmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\controllers\\trabajadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\controllers\\trabajadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\db\\trabajadorespruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\db\\trabajadorespruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\db\\trabajadore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\db\\trabajadore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\trabajador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\trabajador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\listar_trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\listar_trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\db\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\db\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\db\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\db\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\models\\db\\provincium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\models\\db\\provincium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\proytrabjador.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\proytrabjador.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|d:\\descargas\\solucion\\slntrabjador\\proytrabjador\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB81D16E-5620-4CCF-BF64-A8F8DD44835C}|ProyTrabjador\\ProyTrabjador.csproj|solutionrelative:proytrabjador\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_EditarModal.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\_EditarModal.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\Trabajador\\_EditarModal.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\_EditarModal.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\Trabajador\\_EditarModal.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAEAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T15:28:50.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\Trabajador\\Eliminar.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\Eliminar.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\Trabajador\\Eliminar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T04:22:03.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T04:16:12.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T04:01:15.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Listado.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\Listado.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\Trabajador\\Listado.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Trabajador\\Listado.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\Trabajador\\Listado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T03:37:24.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T03:35:48.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ProyTrabjador\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T03:35:47.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrabajadorController.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Controllers\\TrabajadorController.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Controllers\\TrabajadorController.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Controllers\\TrabajadorController.cs",
+              "RelativeToolTip": "ProyTrabjador\\Controllers\\TrabajadorController.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAswLEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:11:12.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrabajadoresPruebaContext.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\TrabajadoresPruebaContext.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\DB\\TrabajadoresPruebaContext.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\TrabajadoresPruebaContext.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\DB\\TrabajadoresPruebaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:04:53.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Trabajadore.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Trabajadore.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\DB\\Trabajadore.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Trabajadore.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\DB\\Trabajadore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:06:08.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Departamento.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\DB\\Departamento.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Departamento.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\DB\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:05:53.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Distrito.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Distrito.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\DB\\Distrito.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Distrito.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\DB\\Distrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:05:55.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Provincium.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Provincium.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\DB\\Provincium.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\DB\\Provincium.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\DB\\Provincium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:05:57.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Listar_Trabajador.cs",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\Listar_Trabajador.cs",
+              "RelativeDocumentMoniker": "ProyTrabjador\\Models\\Listar_Trabajador.cs",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\Models\\Listar_Trabajador.cs",
+              "RelativeToolTip": "ProyTrabjador\\Models\\Listar_Trabajador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:13:09.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProyTrabjador.csproj",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\ProyTrabjador.csproj",
+              "RelativeDocumentMoniker": "ProyTrabjador\\ProyTrabjador.csproj",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\ProyTrabjador.csproj",
+              "RelativeToolTip": "ProyTrabjador\\ProyTrabjador.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-16T02:44:42.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyTrabjador\\appsettings.json",
+              "ToolTip": "D:\\Descargas\\Solucion\\SlnTrabjador\\ProyTrabjador\\appsettings.json",
+              "RelativeToolTip": "ProyTrabjador\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-16T02:44:33.269Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

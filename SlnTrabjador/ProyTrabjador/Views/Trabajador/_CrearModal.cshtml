@@ -1,0 +1,134 @@
+@model ProyTrabjador.Models.TrabajadorViewModel
+
+@{
+    Layout = null;
+}
+
+<form id="crearTrabajadorForm" asp-action="CrearModal" method="post">
+    <div class="modal-body">
+        <div class="form-group">
+            <label asp-for="TipoDocumento"></label>
+            <select asp-for="TipoDocumento" asp-items="Model.TiposDocumento" class="form-control"></select>
+            <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NumeroDocumento"></label>
+            <input asp-for="NumeroDocumento" class="form-control" />
+            <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nombres"></label>
+            <input asp-for="Nombres" class="form-control" />
+            <span asp-validation-for="Nombres" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Sexo"></label>
+            <select asp-for="Sexo" asp-items="Model.Sexos" class="form-control"></select>
+            <span asp-validation-for="Sexo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdDepartamento" class="control-label"></label>
+            <select asp-for="IdDepartamento" asp-items="Model.Departamentos" class="form-control" id="ddlDepartamentosCrearModal">
+                <option value="">-- Seleccione un Departamento --</option>
+            </select>
+            <span asp-validation-for="IdDepartamento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdProvincia" class="control-label"></label>
+            <select asp-for="IdProvincia" asp-items="Model.Provincias" class="form-control" id="ddlProvinciasCrearModal">
+                <option value="">-- Seleccione una Provincia --</option>
+            </select>
+            <span asp-validation-for="IdProvincia" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdDistrito" class="control-label"></label>
+            <select asp-for="IdDistrito" asp-items="Model.Distritos" class="form-control" id="ddlDistritosCrearModal">
+                <option value="">-- Seleccione un Distrito --</option>
+            </select>
+            <span asp-validation-for="IdDistrito" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
+</form>
+
+<script>
+$(document).ready(function () {
+    // Dependencias de combos
+    $('#ddlDepartamentosCrearModal').change(function () {
+        var idDepartamento = $(this).val();
+        if (idDepartamento) {
+            $('#ddlProvinciasCrearModal').empty().append('<option value="">-- Cargando Provincias --</option>').prop('disabled', true);
+            $('#ddlDistritosCrearModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+            $.ajax({
+                url: '/Trabajador/ObtenerProvincias',
+                type: 'GET',
+                data: { idDepartamento: idDepartamento },
+                success: function (data) {
+                    $('#ddlProvinciasCrearModal').empty();
+                    $('#ddlProvinciasCrearModal').append('<option value="">-- Seleccione una Provincia --</option>');
+                    $.each(data, function (key, provincia) {
+                        $('#ddlProvinciasCrearModal').append('<option value="' + provincia.value + '">' + provincia.text + '</option>');
+                    });
+                    $('#ddlProvinciasCrearModal').prop('disabled', false);
+                },
+                error: function () {
+                    $('#ddlProvinciasCrearModal').empty().append('<option value="">-- Error al cargar --</option>').prop('disabled', false);
+                }
+            });
+        } else {
+            $('#ddlProvinciasCrearModal').empty().append('<option value="">-- Seleccione una Provincia --</option>').prop('disabled', true);
+            $('#ddlDistritosCrearModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+        }
+    });
+    $('#ddlProvinciasCrearModal').change(function () {
+        var idProvincia = $(this).val();
+        if (idProvincia) {
+            $('#ddlDistritosCrearModal').empty().append('<option value="">-- Cargando Distritos --</option>').prop('disabled', true);
+            $.ajax({
+                url: '/Trabajador/ObtenerDistritos',
+                type: 'GET',
+                data: { idProvincia: idProvincia },
+                success: function (data) {
+                    $('#ddlDistritosCrearModal').empty();
+                    $('#ddlDistritosCrearModal').append('<option value="">-- Seleccione un Distrito --</option>');
+                    $.each(data, function (key, distrito) {
+                        $('#ddlDistritosCrearModal').append('<option value="' + distrito.value + '">' + distrito.text + '</option>');
+                    });
+                    $('#ddlDistritosCrearModal').prop('disabled', false);
+                },
+                error: function () {
+                    $('#ddlDistritosCrearModal').empty().append('<option value="">-- Error al cargar --</option>').prop('disabled', false);
+                }
+            });
+        } else {
+            $('#ddlDistritosCrearModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+        }
+    });
+    // Submit AJAX
+    $('#crearTrabajadorForm').submit(function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+        var formData = form.serialize();
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            success: function (response) {
+                if (response.success) {
+                    $('.modal').modal('hide');
+                    location.reload();
+                } else {
+                    $('#modalCrearBody').html(response);
+                }
+            },
+            error: function () {
+                alert('Ocurrió un error al guardar el trabajador.');
+            }
+        });
+    });
+});
+</script> 

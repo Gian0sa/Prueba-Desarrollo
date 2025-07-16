@@ -1,0 +1,144 @@
+@model ProyTrabjador.Models.TrabajadorViewModel
+
+@{
+    Layout = null;
+}
+
+<form id="editTrabajadorForm" asp-action="EditarModal" method="post">
+    <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Editar Trabajador</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="TipoDocumento"></label>
+            <input asp-for="TipoDocumento" class="form-control" />
+            <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NumeroDocumento"></label>
+            <input asp-for="NumeroDocumento" class="form-control" />
+            <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nombres"></label>
+            <input asp-for="Nombres" class="form-control" />
+            <span asp-validation-for="Nombres" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Sexo"></label>
+            <select asp-for="Sexo" asp-items="Model.Sexos" class="form-control"></select>
+            <span asp-validation-for="Sexo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdDepartamento" class="control-label"></label>
+            <select asp-for="IdDepartamento" asp-items="Model.Departamentos" class="form-control" id="ddlDepartamentosModal">
+                <option value="">-- Seleccione un Departamento --</option>
+            </select>
+            <span asp-validation-for="IdDepartamento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdProvincia" class="control-label"></label>
+            <select asp-for="IdProvincia" asp-items="Model.Provincias" class="form-control" id="ddlProvinciasModal">
+                <option value="">-- Seleccione una Provincia --</option>
+            </select>
+            <span asp-validation-for="IdProvincia" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdDistrito" class="control-label"></label>
+            <select asp-for="IdDistrito" asp-items="Model.Distritos" class="form-control" id="ddlDistritosModal">
+                <option value="">-- Seleccione un Distrito --</option>
+            </select>
+            <span asp-validation-for="IdDistrito" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+        // Cuando cambia el departamento, cargar provincias
+        $('#ddlDepartamentosModal').change(function () {
+            var idDepartamento = $(this).val();
+            if (idDepartamento) {
+                $('#ddlProvinciasModal').empty().append('<option value="">-- Cargando Provincias --</option>').prop('disabled', true);
+                $('#ddlDistritosModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+                $.ajax({
+                    url: '/Trabajador/ObtenerProvincias',
+                    type: 'GET',
+                    data: { idDepartamento: idDepartamento },
+                    success: function (data) {
+                        $('#ddlProvinciasModal').empty();
+                        $('#ddlProvinciasModal').append('<option value="">-- Seleccione una Provincia --</option>');
+                        $.each(data, function (key, provincia) {
+                            $('#ddlProvinciasModal').append('<option value="' + provincia.value + '">' + provincia.text + '</option>');
+                        });
+                        $('#ddlProvinciasModal').prop('disabled', false);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#ddlProvinciasModal').empty().append('<option value="">-- Error al cargar --</option>').prop('disabled', false);
+                    }
+                });
+            } else {
+                $('#ddlProvinciasModal').empty().append('<option value="">-- Seleccione una Provincia --</option>').prop('disabled', true);
+                $('#ddlDistritosModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+            }
+        });
+        // Cuando cambia la provincia, cargar distritos
+        $('#ddlProvinciasModal').change(function () {
+            var idProvincia = $(this).val();
+            if (idProvincia) {
+                $('#ddlDistritosModal').empty().append('<option value="">-- Cargando Distritos --</option>').prop('disabled', true);
+                $.ajax({
+                    url: '/Trabajador/ObtenerDistritos',
+                    type: 'GET',
+                    data: { idProvincia: idProvincia },
+                    success: function (data) {
+                        $('#ddlDistritosModal').empty();
+                        $('#ddlDistritosModal').append('<option value="">-- Seleccione un Distrito --</option>');
+                        $.each(data, function (key, distrito) {
+                            $('#ddlDistritosModal').append('<option value="' + distrito.value + '">' + distrito.text + '</option>');
+                        });
+                        $('#ddlDistritosModal').prop('disabled', false);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#ddlDistritosModal').empty().append('<option value="">-- Error al cargar --</option>').prop('disabled', false);
+                    }
+                });
+            } else {
+                $('#ddlDistritosModal').empty().append('<option value="">-- Seleccione un Distrito --</option>').prop('disabled', true);
+            }
+        });
+
+        // Submit AJAX para el formulario de edición en modal
+        $('#editTrabajadorForm').submit(function (e) {
+            e.preventDefault();
+            var form = $(this);
+            var url = form.attr('action');
+            var formData = form.serialize();
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        // Cierra el modal y recarga la página
+                        $('.modal').modal('hide');
+                        location.reload();
+                    } else {
+                        // Si hay errores de validación, reemplaza el contenido del modal
+                        $('#modalEditarBody').html(response);
+                    }
+                },
+                error: function () {
+                    alert('Ocurrió un error al guardar los cambios.');
+                }
+            });
+        });
+    });
+</script> 

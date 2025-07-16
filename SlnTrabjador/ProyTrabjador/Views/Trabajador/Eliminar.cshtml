@@ -1,0 +1,26 @@
+@model ProyTrabjador.Models.Listar_Trabajador
+
+@{
+    ViewData["Title"] = "Eliminar Trabajador";
+}
+
+<h2>Eliminar Trabajador</h2>
+
+<div class="alert alert-warning">
+    <strong>¿Está seguro de eliminar el registro?</strong>
+</div>
+
+<dl class="row">
+    <dt class="col-sm-2">@Html.DisplayNameFor(m => m.Nombres)</dt>
+    <dd class="col-sm-10">@Model.Nombres</dd>
+    <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NumeroDocumento)</dt>
+    <dd class="col-sm-10">@Model.NumeroDocumento</dd>
+    <dt class="col-sm-2">@Html.DisplayNameFor(m => m.TipoDocumento)</dt>
+    <dd class="col-sm-10">@Model.TipoDocumento</dd>
+</dl>
+
+<form asp-action="Eliminar" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Listado" class="btn btn-secondary">Cancelar</a>
+</form> 
